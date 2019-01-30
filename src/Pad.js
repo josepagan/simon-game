@@ -2,6 +2,7 @@ import React from 'react'
   
 
 function Pad(props){
+  console.log('props', props)
   let padStyle = {}
   if (props.isPlaying === props.ofColour){
     padStyle.backgroundColor =  props.whenLit

@@ -108,10 +108,10 @@ class App extends Component {
      console.log("now playing", this.state.nowPlaying)
     return (
       <div className="App">
-        <Pad ofColour='darkgreen' whenLit="green" clickProp={this.handleClick} isPlaying={this.state.isPlaying}/> 
-        <Pad ofColour='darkred' whenLit="red" clickProp={this.handleClick} isPlaying={this.state.isPlaying}/> 
-        <Pad ofColour='olive' whenLit="yellow" clickProp={this.handleClick} isPlaying={this.state.isPlaying}/>
-        <Pad ofColour='navy' whenLit="blue" clickProp={this.handleClick} isPlaying={this.state.isPlaying}/>
+        <Pad ofColour='darkgreen' whenLit="green" clickProp={this.handleClick} isPlaying={this.state.nowPlaying}/> 
+        <Pad ofColour='darkred' whenLit="red" clickProp={this.handleClick} isPlaying={this.state.nowPlaying}/> 
+        <Pad ofColour='olive' whenLit="yellow" clickProp={this.handleClick} isPlaying={this.state.nowPlaying}/>
+        <Pad ofColour='navy' whenLit="blue" clickProp={this.handleClick} isPlaying={this.state.nowPlaying}/>
       </div>
     );
   }
